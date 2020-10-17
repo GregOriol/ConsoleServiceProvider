@@ -52,7 +52,7 @@ class ConsoleServiceProvider implements ServiceProviderInterface
             if ($app['dispatcher']->hasListeners(ConsoleEvents::INIT)) {
                 @trigger_error('Listening to the Knp\Console\ConsoleEvents::INIT event is deprecated and will be removed in v3 of the service provider. You should extend the console service instead.', E_USER_DEPRECATED);
 
-                $app['dispatcher']->dispatch(ConsoleEvents::INIT, new ConsoleEvent($console));
+                $app['dispatcher']->dispatch(new ConsoleEvent($console), ConsoleEvents::INIT);
             }
 
             return $console;

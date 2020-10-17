@@ -2,7 +2,7 @@
 
 namespace Knp\Console;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 /**
  * Lets you access the console application.
