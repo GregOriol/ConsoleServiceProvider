@@ -14,7 +14,7 @@
     "require": {
         "php": ">=7.2.5",
         "symfony/console": "^5.0",
-        "silex/silex": "2.3.x-dev"
+        "silex/silex": "2.5.x-dev"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^5.0",
@@ -36,7 +36,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.2.x-dev"
+            "dev-master": "2.5.x-dev"
         }
     },
     "repositories": [
